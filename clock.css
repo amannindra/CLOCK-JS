@@ -1,0 +1,62 @@
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-color: #d9d7dd;
+  align-items: center; /* This vertically centers children */
+  justify-content: center; /* This horizontally centers children */
+  height: 100vh; /* Use the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  flex-direction: column;
+}
+.text {
+  margin-bottom: 20px;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Fixed size for demonstration, adjust as needed */
+  height: 300px; /* Fixed size for demonstration, adjust as needed */
+  border-radius: 50%;
+  background-color: white;
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: black;
+}
+#hour {
+  color: rgb(0, 0, 0);
+  width: 6px;
+  height: 100px;
+}
+#minute {
+  background-color: red;
+  width: 4px;
+  height: 130px;
+  
+
+}
+#second {
+  background-color: green;
+  width:2px;
+  height:150px;
+}
+
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#dot {
+  position: absolute;
+  border-radius: 100px;
+  background: white;
+  border: 2px;
+  border-color: black;
+}
