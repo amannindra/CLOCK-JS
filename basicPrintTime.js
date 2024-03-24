@@ -22,7 +22,23 @@ printDate.innerText = date;*/
 
 const printDate = document.getElementById("datePrint");
 const printTime = document.getElementById("timePrint");
-
+function numberToMonth(number) {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  return months[number];
+}
 setInterval(() => {
   currentDate = new Date();
   currentDayOfMonth = currentDate.getDate();
@@ -41,7 +57,8 @@ setInterval(() => {
     currentHour = "0" + currentHour;
   }
   time = currentHour + ":" + currentMinute + ":" + currentSecond;
-  date = currentMonth + ":" + currentDayOfMonth + ":" + currentYear;
-  printDate.innerText = date;
-  printTime.innerText = time;
+  date =
+    numberToMonth(currentMonth) + " " + currentDayOfMonth + ", " + currentYear;
+  printDate.innerText = "Date: " + date;
+  printTime.innerText = "Time: " + time;
 }, 1000);
