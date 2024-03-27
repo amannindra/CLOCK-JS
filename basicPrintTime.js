@@ -56,9 +56,15 @@ setInterval(() => {
   if (currentHour < 10) {
     currentHour = "0" + currentHour;
   }
-  time = currentHour + ":" + currentMinute + ":" + currentSecond;
-  date =
-    numberToMonth(currentMonth) + " " + currentDayOfMonth + ", " + currentYear;
+  if(currentHour < 13){
+    time = currentHour + ":" + currentMinute + " AM";
+  }
+  else{
+    currentHour -= 12;
+    time = currentHour + ":" + currentMinute + " PM";
+  }
+  console.log(time);
+  date = numberToMonth(currentMonth) + " " + currentDayOfMonth + ", " + currentYear;
   printDate.innerText = "Date: " + date;
   printTime.innerText = "Time: " + time;
 }, 1000);

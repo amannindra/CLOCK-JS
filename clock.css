@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 body {
+  display: flex;
+  flex-direction: column;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
-  background-color: #d9d7dd;
-  align-items: center; /* This vertically centers children */
-  justify-content: center; /* This horizontally centers children */
+  background-color: #eae8ef;
+  align-items: center;
+  justify-content: center;
   height: 100vh; /* Use the full height of the viewport */
   margin: 0; /* Remove default margin */
   flex-direction: column;
@@ -21,39 +23,42 @@ body {
   height: 300px; /* Fixed size for demonstration, adjust as needed */
   border-radius: 50%;
   background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 #hour,
 #minute,
 #second {
   position: absolute;
-  background: black;
   transform-origin: bottom;
 }
 #hour {
-  color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
   width: 6px;
   height: 100px;
-  transform: rotate(0);
-  left: 49%;
+  transform: translateX(-50%);
+  left: 50%;
   bottom: 50%;
 }
 #minute {
   background-color: rgb(0, 0, 0);
   width: 4px;
   height: 130px;
-  transform: rotate(0);
-  left: 49%;
+  transform: translateX(-50%);
+  left: 50%;
   bottom: 50%;
 }
 #second {
   background-color: rgb(255, 0, 0);
   width: 2px;
   height: 150px;
-  transform: rotate(0);
-  left: 49%;
+  transform: translateX(-50%);
+  left: 50%;
   bottom: 50%;
 }
-
+.clock:hover {
+  transform: scale(1.05);
+}
 .center-wrapper {
   margin-top: -200px;
   display: flex;
@@ -69,27 +74,29 @@ body {
   border-radius: 30px;
   background: rgb(255, 255, 255);
   border: 2px solid black;
-  border-color: black;
 }
 
-/* Text Css*/
-.text {
+.box {
   display: flex;
   flex-direction: column;
-  position: relative;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 20px 40px;
+  border: 1px solid black;
+  background-color: green;
   color: black;
-  font-size: 4vw;
-  font-family: "Roboto", sans-serif;
-  text-shadow: 2px 2px 4px #000000;
-  transition: all 0.5s ease-in-out;
+  border-radius: 25px;
+  font-size: 1.5rem;
 }
-#datePrint {
-  padding: 0px;
-  margin-bottom: 0px;
-}
+/* Text Css*/
+#datePrint,
 #timePrint {
-  margin-top: 10px;
-  padding: 0px;
-  margin-bottom: 5px;
+  margin: 0;
+
+  padding: 5px 0; /* Ensures a little spacing */
+}
+#datePrint,
+#timePrint:hover {
+  transform: scale(1.05);
 }
