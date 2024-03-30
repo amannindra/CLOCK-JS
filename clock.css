@@ -58,6 +58,7 @@ body {
 }
 .clock:hover {
   transform: scale(1.05);
+  
 }
 .center-wrapper {
   margin-top: -200px;
@@ -93,7 +94,6 @@ body {
 #datePrint,
 #timePrint {
   margin: 0;
-
   padding: 5px 0; /* Ensures a little spacing */
 }
 #datePrint,
