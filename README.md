@@ -1,11 +1,21 @@
-"# CLOCK-JS" 
+# CLOCK-JS
 
-Currently March 24,2024, 12:05am. I have been working on this clock  for the past 1 hour. I have missing my movie time with my mom. I will now go watch the movie. I will check back with you later.
+## Update History
 
-Currently 9:59 am March 24,2024, I finished watch the movie "Teri Baaton Mein Aisa Uljha Jiya." It was a pretty good movie. Lots of funny and cringe moments in the film. It in end it said "to be continued" so II am guessing there is going to be a part 2.
+### Date: March 24, 2024
+**Time:** 12:05 am
 
-If there is please watch it.
+I have been working on this clock for the past hour but missed my movie time with my mom. I will now go watch the movie and check back with you later.
 
-Right Now I going to try to finished this clock. 
+**Time:** 9:59 am
 
-Finished 12:02 pm March 24,2024. Don't worry I wasn't fully focusing on this project. I was watching youtube.
+I finished watching the movie "Teri Baaton Mein Aisa Uljha Jiya." It was a pretty good movie with lots of funny and cringe moments. The film ended with "to be continued," so I am guessing there will be a part 2. If there is, please watch it.
+
+**Time:** 12:02 pm
+
+Finished the clock project. Don't worry, I wasn't fully focusing on this project as I was watching YouTube.
+
+### Date: April 19, 2024
+**Time:** 12:41 am
+
+I updated the README file.
